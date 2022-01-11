@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>More JS</title>
+        <script src="JS/main.js"></script>
+        <style>
+            h1:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="concatenate" onclick="myFunction()" title="Click Me!">Your Trips for the Year:</h1>
+        <button type="button" onclick="document.getElementById('europe').innerHTML = europe">Europe</button>
+        <p id="europe"></p>
+        <button type="button" onclick="document.getElementById('asia').innerHTML = asia">Asia</button>
+        <p id="asia"></p>
+        <button type="button" onclick="document.getElementById('sAmerica').innerHTML = sAmerica">South America</button>
+        <p id="sAmerica"></p>
+    </body>
+</html>
