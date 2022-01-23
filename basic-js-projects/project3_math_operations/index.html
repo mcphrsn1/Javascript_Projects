@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <h1>This is my page of math operations.</h1>
+        <h3>This is a multiplication operation.</h3>
+        <p>Click the button to get the result of 7 * 154 = <span id="demo1"></span></p>
+        <button onclick="document.getElementById('demo1').innerHTML = x">Click Me</button>
+        <br>
+        <h3>This is a subtraction operation.</h3>
+        <p>Click the button to get the result of 430 - 79 = <span id="demo2"></span></p>
+        <button onclick="document.getElementById('demo2').innerHTML = sub">Click Me</button>
+        <br>
+        <h3>This is an addition operation.</h3>
+        <p>Click the button to get the result of 5 + 7 = <span id="demo3"></span></p>
+        <button onclick="document.getElementById('demo3').innerHTML = add">Click Me</button>
+        <br>
+        <h3>This is a division operation.</h3>
+        <p>Click the button to get the result of 100,678 / 478 = <span id="demo4"></span></p>
+        <button onclick="document.getElementById('demo4').innerHTML = divide">Click Me</button>
+        <br>
+        <h3>This is an everything operation.</h3>
+        <p>(10 * 7) / 4 + 2 = <span id="demo5"></span></p>
+        <button onclick="document.getElementById('demo5').innerHTML = all_math">Click Me</button>
+        <br>
+        <h3>This is a modulus operation.</h3>
+        <p>The remainder of 25 / 6 =<span id="demo6"></span></p>
+        <button onclick="document.getElementById('demo6').innerHTML = modulus">Click Me</button>
+        <br>
+        <h3>This is a negative unary operation.</h3>
+        <p><span id="demo7"></span></p>
+        <button onclick="document.getElementById('demo7').innerHTML = -x">Click Me</button>
+
+        <p id="demo8"></p>
+        <button onclick="document.getElementById('demo8').innerHTML = math1(8,8)">Click Me</button>
+    </body>
+</html>
