@@ -1,3 +1,5 @@
+
+// This is a simple dictionary / KVP function
 function my_dictionary() {
     var Wine = {
         Varietal: "Pinot Noir",
@@ -6,5 +8,6 @@ function my_dictionary() {
         Notes: "Charcoal, Strawberry, Pencil Shavings",
         Viscosity: "Light"
     };
-    document.getElementById("Dictionary").innerHTML = Wine;
+    delete Wine.Varietal;
+    document.getElementById("Dictionary").innerHTML = Wine.Varietal;
 }
