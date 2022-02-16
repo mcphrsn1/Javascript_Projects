@@ -42,3 +42,36 @@ function constant_function() {
 
 let X = 23;
 console.log(X);
+
+let x = myFunction(4, 3); 
+document.getElementById("returned").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;   
+}
+
+let car = {
+    make: "Dodge ",
+    model: "Viper ",
+    year: "2021 ",
+    color: "red ",
+    description: function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
+
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo2").innerHTML = text;
+
+let text2 = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text2 += "The number is " + i + "<br>";
+}
+document.getElementById("demo3").innerHTML = text2;
